@@ -1,4 +1,4 @@
-const C='webos-v2';
+const C='webos-pro-v3';
 self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(['./','index.html','manifest.json'])).catch(()=>{}));self.skipWaiting()});
 self.addEventListener('activate',e=>e.waitUntil(clients.claim()));
 self.addEventListener('fetch',e=>{
